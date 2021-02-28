@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de passar paràmetre estil REST</title>
+</head>
+<body>
+<!-- saluda2.html-->
+El missatge que es mostra, es recull del controlador
+a través de l'atribut "nomParam".
+</br>
+En aquest exemple ho fem amb @PathVariable i passem els valors per la URL
+estil REST
+
+<h1> Exemple tipus REST -> http://localhost:8080/saluda2/<span th:text="${nomParam}"></span> </h1>
+
+<h1 th:text="${'hola què tal '+nomParam}"> </h1>
+
+</body>
+</html>

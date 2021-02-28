@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recollir un atribut a la vista</title>
+</head>
+<body>
+<!-- saluda1.html-->
+
+El missatge que es mostra, es recull del controlador
+a través de l'atribut "nomParam"
+<h1 th:text="${'Hola què tal '+nomParam}">Això no es veu si arriba el valor de l'atribut</h1>
+</body>
+</html>
+
